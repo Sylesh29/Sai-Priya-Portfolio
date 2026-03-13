@@ -1,5 +1,5 @@
 import React from 'react';
-import { Monitor, Database, Shield } from 'lucide-react';
+import { Monitor, Database, Shield, Activity } from 'lucide-react';
 
 const Tag = ({ label }) => (
   <span className="px-3 py-1 bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs rounded-full font-medium">
@@ -9,9 +9,9 @@ const Tag = ({ label }) => (
 
 const ProjectBanner = ({ id }) => {
   const configs = {
-    1: { gradient: 'from-blue-900 via-cyan-900 to-slate-900', icon: <Monitor className="w-12 h-12 text-cyan-400 opacity-80" />, label: 'AZURE SENTINEL', dots: '#06b6d4' },
-    2: { gradient: 'from-slate-900 via-indigo-900 to-blue-900', icon: <Database className="w-12 h-12 text-indigo-400 opacity-80" />, label: 'IBM QRADAR', dots: '#818cf8' },
-    3: { gradient: 'from-slate-900 via-red-900/50 to-slate-900', icon: <Shield className="w-12 h-12 text-red-400 opacity-80" />, label: 'CROWDSTRIKE', dots: '#f87171' },
+    1: { gradient: 'from-green-900 via-teal-900 to-slate-900',   icon: <Activity className="w-12 h-12 text-green-400 opacity-80" />,  label: 'IOMT SECURITY',    dots: '#4ade80' },
+    2: { gradient: 'from-blue-900 via-indigo-900 to-slate-900',  icon: <Monitor className="w-12 h-12 text-blue-400 opacity-80" />,    label: 'SIEM & SOC OPS',   dots: '#60a5fa' },
+    3: { gradient: 'from-cyan-900 via-blue-900 to-slate-900',    icon: <Shield className="w-12 h-12 text-cyan-400 opacity-80" />,     label: 'AZURE SENTINEL',   dots: '#06b6d4' },
   };
   const c = configs[id] || configs[1];
   return (

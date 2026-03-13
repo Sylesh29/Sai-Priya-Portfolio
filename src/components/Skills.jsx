@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Server, Monitor, CheckCircle, Code } from 'lucide-react';
+import { Shield, Server, Monitor, CheckCircle, Code, Mail, Wifi, Layers } from 'lucide-react';
 
 const Tag = ({ label }) => (
   <span className="px-3 py-1 bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs rounded-full font-medium">
@@ -8,11 +8,15 @@ const Tag = ({ label }) => (
 );
 
 const skillCategories = [
-  { key: 'cloud', label: 'Cloud Platforms', icon: Server },
-  { key: 'siem', label: 'SIEM Solutions', icon: Monitor },
-  { key: 'security', label: 'Security Tools', icon: Shield },
-  { key: 'compliance', label: 'Compliance & Risk', icon: CheckCircle },
-  { key: 'programming', label: 'Programming', icon: Code },
+  { key: 'siem',          label: 'SIEM Tools',                   icon: Monitor },
+  { key: 'edr',           label: 'EDR / XDR',                    icon: Shield },
+  { key: 'vulnerability', label: 'Vulnerability Management',      icon: CheckCircle },
+  { key: 'cloud',         label: 'Cloud Platforms',               icon: Server },
+  { key: 'email',         label: 'Email Security',                icon: Mail },
+  { key: 'firewalls',     label: 'Firewalls',                     icon: Layers },
+  { key: 'ticketing',     label: 'Ticketing & SOAR',              icon: Wifi },
+  { key: 'programming',   label: 'Programming Languages',         icon: Code },
+  { key: 'networking',    label: 'Networking & OS',               icon: Server },
 ];
 
 const Skills = ({ data }) => (
@@ -30,7 +34,7 @@ const Skills = ({ data }) => (
               <h3 className="text-white font-semibold">{label}</h3>
             </div>
             <div className="flex flex-wrap gap-2">
-              {data[key].map(skill => <Tag key={skill} label={skill} />)}
+              {(data[key] || []).map(skill => <Tag key={skill} label={skill} />)}
             </div>
           </div>
         ))}

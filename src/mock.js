@@ -1,125 +1,146 @@
 export const portfolioData = {
   personal: {
     name: "Shanmukhi Sai Priya Sandaka",
-    title: "Technical Consultant | Microsoft Security, Azure Sentinel",
+    title: "Cybersecurity Response Engineer",
     location: "Boca Raton, Florida, United States",
+    phone: "+1 (561) 562-0917",
     email: "saipriyasandaka@gmail.com",
     linkedin: "https://www.linkedin.com/in/shanmukhi-sai-priya-sandaka-b66391186",
     credly: "https://www.credly.com/users/shanmukhi-saipriya-sandaka.cabf3a3c",
-    bio: "Cybersecurity Consultant with hands-on experience in cloud security, SIEM solutions, and threat detection. Proficient in managing enterprise security tools, analyzing security events, and ensuring compliance in cloud environments.",
+    bio: "Cybersecurity Response Engineer with senior-level expertise in enterprise and cloud security operations across multi-location environments. Led IoMT vulnerability management program, reducing device risk scores by 30% and streamlined incident response using Microsoft Sentinel and Splunk, cutting mean time to remediation by 40%.",
     tagline: "Securing Digital Assets Through Advanced Threat Intelligence"
   },
+
   stats: [
-    { label: "Years Experience", value: "5+" },
-    { label: "Certifications", value: "5+" },
-    { label: "Security Tools", value: "10+" },
+    { label: "Years Experience", value: "6+" },
+    { label: "Certifications", value: "9+" },
+    { label: "Security Tools", value: "15+" },
     { label: "Client Projects", value: "20+" }
   ],
+
   skills: {
-    cloud: ["Microsoft Azure", "Azure Sentinel", "Azure Security Center", "AWS"],
-    siem: ["IBM QRadar", "Azure Sentinel", "Splunk", "ArcSight"],
-    security: ["CrowdStrike", "Endpoint Security", "Threat Intelligence", "Incident Response"],
-    compliance: ["SIEM Management", "Security Monitoring", "Vulnerability Assessment", "Risk Management"],
-    programming: ["Python", "PowerShell", "KQL", "SQL"]
+    siem: ["Azure Sentinel", "Splunk", "IBM QRadar"],
+    edr: ["CrowdStrike", "Trend Micro", "Red Clock"],
+    vulnerability: ["Nessus", "Qualys", "ZAP", "Cynerio", "Asimily", "Armis", "Paloalto Cortex"],
+    cloud: ["Microsoft Azure", "AWS"],
+    email: ["Proofpoint", "Microsoft 365 Defender"],
+    firewalls: ["Checkpoint", "Palo Alto"],
+    ticketing: ["ServiceNow", "VSOC", "Swimlane"],
+    programming: ["Python", "JavaScript", "SQL", "SPL"],
+    networking: ["OSI Layers", "Routers", "Switches", "Windows", "Linux", "macOS"]
   },
+
   experience: [
     {
       id: 1,
       company: "Cyber Salus",
-      role: "Cybersecurity Intern",
+      role: "Cybersecurity Response Engineer",
       period: "January 2026 - Present",
       location: "United States",
-      description: "Contributing to advanced cybersecurity initiatives and threat analysis projects.",
+      description: "Specialized in IoMT vulnerability management and incident response for healthcare security operations.",
       responsibilities: [
-        "Assisting in security assessments and vulnerability analysis",
-        "Supporting incident response operations",
-        "Researching emerging cyber threats and mitigation strategies"
+        "Specialized in IoMT vulnerability management, assessing risks in connected medical devices using CVSS and threat intelligence, enabling faster remediation of critical device vulnerabilities and improved compliance posture",
+        "Supported incident response and vulnerability remediation using ServiceNow and VSOC tools, ensuring alignment with healthcare security and compliance standards, reducing average incident resolution time",
+        "Collaborated with clinical, IT, and compliance teams to implement security controls that protected patient safety and maintained uninterrupted clinical operations, resulting in zero security-related service disruptions"
       ]
     },
     {
       id: 2,
       company: "IBM",
-      role: "Technical Consultant",
+      role: "Technical Consultant, Cyber Security (GSOC Wood PLC)",
       period: "December 2021 - December 2023",
       location: "Bangalore, Karnataka, India",
-      description: "Led enterprise security implementations and managed SIEM solutions for global clients.",
+      description: "Led enterprise cybersecurity operations managing security incidents and alerts across SIEM platforms for global clients.",
       responsibilities: [
-        "Implemented and managed IBM QRadar SIEM for enterprise clients",
-        "Conducted advanced threat analysis and incident response",
-        "Developed custom security rules and correlation logic",
-        "Provided technical consultation on cloud security architecture"
+        "Led enterprise cybersecurity operations by managing security incidents, alerts, cases, and logs across Microsoft Sentinel, IBM QRadar, and Splunk, ensuring timely detection, response, and remediation of threats",
+        "Analysed cyber threat intelligence and attack surface exposure to identify risks across endpoints, networks, and cloud environments, recommending architecture and remediation changes",
+        "Conducted advanced threat hunting, malware investigations, and forensic analysis using CrowdStrike and Trend Micro EDR/XDR technologies, improving detection accuracy and malware containment",
+        "Collaborated with security architecture, GRC, and IT infrastructure teams using MITRE ATT&CK mapping to align remediation with NIST frameworks, ensuring audit readiness",
+        "Mentored Tier 1 and Tier 2 SOC analysts, improving incident handling efficiency, investigation quality, and operational maturity"
       ]
     },
     {
       id: 3,
       company: "Infosys",
-      role: "Senior System Engineer",
+      role: "M1 Services Associate Consultant – Cloud Security Analyst",
       period: "December 2018 - December 2021",
       location: "Mysore, India",
-      description: "Managed security operations and implemented threat detection solutions.",
+      description: "Managed cloud security operations and cyber threat intelligence workflows with Azure Sentinel across multi-tenant enterprise environments.",
       responsibilities: [
-        "Monitored and analyzed security events using SIEM platforms",
-        "Performed vulnerability assessments and penetration testing",
-        "Automated security workflows and incident response procedures",
-        "Collaborated with cross-functional teams on security initiatives"
+        "Managed cloud security operations and cyber threat intelligence workflows with Azure Sentinel, enabling faster detection and remediation across multi-tenant enterprise cloud environments",
+        "Conducted log analysis, phishing investigations, malware analysis, and exploitation technique validation using Splunk, Python, and ZAP aligned with MITRE ATT&CK and Cyber Kill Chain",
+        "Developed and maintained incident response playbooks and automated remediation workflows using Azure Logic Apps, improving response time and consistency",
+        "Supported firewall compliance and vulnerability remediation using Qualys and Microsoft Defender to identify security gaps and apply patches",
+        "Produced security metrics and executive-level reports, improving visibility into threat trends, malware activity, and incident outcomes"
       ]
     }
   ],
+
   projects: [
     {
       id: 1,
-      title: "Azure Sentinel Implementation",
-      subtitle: "Cloud-Native SIEM Solution",
-      description: "Deployed and configured Azure Sentinel for enterprise cloud security monitoring and threat detection across multi-cloud environments.",
-      image: "https://images.unsplash.com/photo-1714846201700-356b34475448?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHw0fHxzZWN1cml0eSUyMGFuYWx5dGljcyUyMGRhc2hib2FyZHxlbnwwfHx8fDE3NzM0MTA5Mzd8MA&ixlib=rb-4.1.0&q=85",
-      technologies: ["Azure Sentinel", "KQL", "Azure Logic Apps", "Microsoft Defender", "SOAR"],
-      challenges: "Integrating multiple data sources and creating custom detection rules for sophisticated threats.",
-      solution: "Designed and implemented 50+ custom analytics rules, automated incident response workflows, and integrated threat intelligence feeds.",
-      impact: "Reduced incident detection time by 60% and improved security posture through automated threat hunting."
+      title: "IoMT Vulnerability Management",
+      subtitle: "Healthcare Device Security",
+      description: "Led IoMT vulnerability management program at Cyber Salus, assessing risks in connected medical devices and ensuring compliance posture across healthcare environments.",
+      image: "",
+      technologies: ["CVSS", "Cynerio", "Asimily", "ServiceNow", "VSOC", "Armis"],
+      challenges: "Assessing and remediating vulnerabilities in connected medical devices while maintaining uninterrupted clinical operations.",
+      solution: "Implemented structured IoMT risk assessment using CVSS scoring and threat intelligence feeds, coordinating remediation with clinical and IT teams.",
+      impact: "Reduced device risk scores by 30% and achieved zero security-related service disruptions across clinical operations."
     },
     {
       id: 2,
-      title: "IBM QRadar SIEM Optimization",
-      subtitle: "Enterprise Security Operations",
-      description: "Architected and optimized IBM QRadar deployment for large-scale enterprise security monitoring and compliance reporting.",
-      image: "https://images.unsplash.com/photo-1675627453084-505806a00406?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxzZWN1cml0eSUyMGFuYWx5dGljcyUyMGRhc2hib2FyZHxlbnwwfHx8fDE3NzM0MTA5Mzd8MA&ixlib=rb-4.1.0&q=85",
-      technologies: ["IBM QRadar", "Python", "Custom Rules", "Threat Intelligence", "API Integration"],
-      challenges: "High volume of security events causing alert fatigue and delayed response times.",
-      solution: "Implemented advanced correlation rules, tuned false positives, and created automated response playbooks using Python scripts.",
-      impact: "Decreased false positives by 75% and enhanced threat detection accuracy with custom use cases."
+      title: "SIEM Operations & Threat Hunting",
+      subtitle: "Enterprise SOC at IBM",
+      description: "Led enterprise cybersecurity operations across Microsoft Sentinel, IBM QRadar, and Splunk for Wood PLC, managing incidents and driving advanced threat hunting initiatives.",
+      image: "",
+      technologies: ["Microsoft Sentinel", "IBM QRadar", "Splunk", "CrowdStrike", "Trend Micro", "MITRE ATT&CK"],
+      challenges: "Managing high-volume security incidents across multiple SIEM platforms while minimizing false positives and alert fatigue.",
+      solution: "Conducted advanced threat hunting and forensic analysis using EDR/XDR platforms, tuned detection rules, and aligned remediation efforts to NIST frameworks.",
+      impact: "Improved detection accuracy, lowered false-positive alerts, and mentored Tier 1 & Tier 2 SOC analysts to increase operational maturity."
     },
     {
       id: 3,
-      title: "CrowdStrike Endpoint Protection",
-      subtitle: "Advanced Threat Detection & Response",
-      description: "Deployed CrowdStrike Falcon platform for endpoint detection and response across 5,000+ endpoints in enterprise environment.",
-      image: "https://images.unsplash.com/photo-1762340915700-356b34475448?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwyfHx0aHJlYXQlMjBkZXRlY3Rpb258ZW58MHx8fHwxNzczNDEwOTQxfDA&ixlib=rb-4.1.0&q=85",
-      technologies: ["CrowdStrike Falcon", "EDR", "Threat Hunting", "PowerShell", "IOC Analysis"],
-      challenges: "Detecting and responding to advanced persistent threats (APTs) in real-time.",
-      solution: "Configured behavioral analytics, implemented proactive threat hunting procedures, and integrated with SIEM for centralized visibility.",
-      impact: "Identified and mitigated 15+ advanced threats before they could cause damage, achieving 99.9% endpoint protection rate."
+      title: "Azure Sentinel Cloud Security",
+      subtitle: "Multi-Tenant Cloud Operations",
+      description: "Managed end-to-end cloud security operations at Infosys using Azure Sentinel, automating incident response and conducting threat intelligence workflows across enterprise environments.",
+      image: "",
+      technologies: ["Azure Sentinel", "Azure Logic Apps", "Splunk", "Python", "Qualys", "Microsoft Defender"],
+      challenges: "Detecting and remediating threats across complex multi-tenant enterprise cloud environments with limited automation.",
+      solution: "Developed automated incident response playbooks with Azure Logic Apps and conducted phishing/malware investigations aligned with MITRE ATT&CK and Cyber Kill Chain.",
+      impact: "Cut mean time to remediation by 40% and produced executive-level security metrics improving visibility into threat trends."
     }
   ],
+
   certifications: [
-    { name: "AWS Cloud Practitioner", issuer: "Amazon Web Services", year: "2024" },
-    { name: "Certified in Cybersecurity (CC)", issuer: "ISC2", year: "2023" },
-    { name: "Microsoft Security, Compliance, and Identity Fundamentals", issuer: "Microsoft", year: "2023" },
-    { name: "Ethical Hacking", issuer: "Infosys", year: "2022" },
-    { name: "Energy, Environment and Utilities Industry Jumpstart", issuer: "IBM", year: "2022" }
+    { name: "Microsoft Certified: Security Operations Analyst Associate", issuer: "Microsoft", year: "2024" },
+    { name: "Microsoft Certified Azure Security Engineer (AZ-500)", issuer: "Microsoft", year: "2023" },
+    { name: "ACE-S Applied Cyber Security Essentials Specialist", issuer: "Purdue University", year: "2023" },
+    { name: "CompTIA Security+ SYO-601", issuer: "CompTIA", year: "2023" },
+    { name: "SC-500: Security, Compliance, and Identity Fundamentals", issuer: "Microsoft", year: "2023" },
+    { name: "Splunk Fundamentals User Certification", issuer: "Splunk", year: "2022" },
+    { name: "IBM QRadar SIEM Foundation", issuer: "IBM", year: "2022" },
+    { name: "AWS Certified Cloud Practitioner", issuer: "Amazon Web Services", year: "2022" },
+    { name: "Azure Fundamentals (AZ-900)", issuer: "Microsoft", year: "2022" }
   ],
+
   education: [
     {
       institution: "Florida Atlantic University",
       degree: "Master of Science",
-      field: "Information Technology",
-      period: "2024 - 2025",
-      status: "In Progress"
+      field: "Information Technology (Specialisation in Cybersecurity)",
+      period: "Jan 2024 - Dec 2025",
+      gpa: "4.0 / 4.0",
+      coursework: "Computer and Data Security, Artificial Intelligence, AI with Cybersecurity, Modern Cryptography, Information Assurance Security, Database Systems, Software Engineering",
+      status: "Completed"
     },
     {
       institution: "Jawaharlal Nehru Technological University",
       degree: "Bachelor of Technology",
-      field: "Computer Science",
-      period: "2014 - 2018",
+      field: "Electrical and Electronics Engineering",
+      period: "Jul 2014 - Jul 2018",
+      gpa: "3.25 / 4.0",
+      coursework: "",
       status: "Completed"
     }
   ]

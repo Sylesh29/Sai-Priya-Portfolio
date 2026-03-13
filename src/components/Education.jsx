@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Calendar } from 'lucide-react';
+import { GraduationCap, Calendar, Star, BookOpen } from 'lucide-react';
 
 const Education = ({ data }) => (
   <section id="education" className="py-24 bg-slate-950">
@@ -14,21 +14,29 @@ const Education = ({ data }) => (
                 <GraduationCap className="w-8 h-8 text-cyan-400" />
               </div>
               <div className="flex-1">
-                <span className={`inline-block mb-2 text-xs font-semibold px-3 py-1 rounded-full border ${
-                  edu.status === 'In Progress'
-                    ? 'bg-green-500/20 text-green-400 border-green-500/30'
-                    : 'bg-blue-500/20 text-blue-400 border-blue-500/30'
-                }`}>{edu.status}</span>
+                <span className="inline-block mb-2 text-xs font-semibold px-3 py-1 rounded-full border bg-green-500/20 text-green-400 border-green-500/30">
+                  {edu.status}
+                </span>
                 <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">{edu.degree}</h3>
                 <p className="text-cyan-400 font-semibold text-sm mt-1">{edu.field}</p>
               </div>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-3">
               <p className="text-gray-300 font-medium">{edu.institution}</p>
               <div className="flex items-center gap-2 text-gray-400">
-                <Calendar className="w-4 h-4" />
+                <Calendar className="w-4 h-4 flex-shrink-0" />
                 <span className="text-sm">{edu.period}</span>
               </div>
+              <div className="flex items-center gap-2 text-gray-400">
+                <Star className="w-4 h-4 flex-shrink-0 text-yellow-400" />
+                <span className="text-sm font-semibold text-yellow-400">GPA: {edu.gpa}</span>
+              </div>
+              {edu.coursework && (
+                <div className="flex items-start gap-2 text-gray-400 mt-2">
+                  <BookOpen className="w-4 h-4 flex-shrink-0 mt-0.5 text-cyan-500" />
+                  <p className="text-xs text-gray-400 leading-relaxed">{edu.coursework}</p>
+                </div>
+              )}
             </div>
           </div>
         ))}
